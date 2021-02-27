@@ -1,6 +1,8 @@
-* {
-  margin: 0;
+.home {
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .homepage-ads {
   height: 50vh;
   z-index: -1;
@@ -17,6 +19,7 @@
   position: relative;
   /* top: 300px;
   width: 100%; */
+  flex-wrap: wrap;
 }
 .homepage-products-cards-details {
   width: 312px;
@@ -30,4 +33,9 @@
   /* top: 800px;
   width: 100%; */
   padding: 40px;
+}
+@media screen and (max-width: 1248px) {
+  .homepage-products-cards {
+    column-gap: 10em;
+  }
 }

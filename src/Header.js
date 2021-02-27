@@ -2,9 +2,12 @@ import React from 'react';
 import './Header.css';
 import {HiOutlineLocationMarker} from "react-icons/hi";
 import {CgShoppingCart} from "react-icons/cg";
+import {useStateValue} from './Provider';
+import {Link} from 'react-router-dom';
 
 
 function Header() {
+    const [{ cart }, dispatch] = useStateValue();
     return (
         <div>
         <div className="header">
@@ -19,13 +22,13 @@ function Header() {
             </div>
             <div className='nav-search-bar'>
                 <input type="text" className='nav-search-input'/>
-                <div className='nav-search-btn'>
+                 <div className='nav-search-btn'>
                     < i className="fa fa-search"/>
                 </div>
             
             </div>
             <img className='nav-flag' src="data:image/png;base64,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"/>
-            <div className='header-location'>
+            <div className='header-account-list'>
                 <div className='header-location-line-1'>Hello, Elizabeth</div>
                 <div className='header-location-line-2'>Account & Lists</div>
             </div>
@@ -33,11 +36,20 @@ function Header() {
                 <div className='header-location-line-1'>Returns</div>
                 <div className='header-location-line-2'>& Orders</div>
             </div>
+            <Link to="/checkout">
             <div className='header-cart'>
+                <span className='header-cart-number'> {cart.length}</span>
             <CgShoppingCart style={{color : 'white',fontSize:'30px'}}/>
             </div>
             <div className='header-location-line-2'>Cart</div>
+            </Link>
             
+        </div>
+        <div className='nav-search-bottom'>
+                <input type="text" className='nav-search-input'/>
+                 <div className='nav-search-btn'>
+                    < i className="fa fa-search"/>
+                </div>
         </div>
         
         </div>

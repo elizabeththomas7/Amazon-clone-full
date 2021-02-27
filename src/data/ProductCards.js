@@ -30,7 +30,7 @@ export const ProductCards=[
                 src:"https://images-eu.ssl-images-amazon.com/images/G/31/img20/AmazonBrands/GW/2-1_186x116._SY116_CB430773131_.jpg",
             },
             {
-                itemName:"Cloth organizers & baskets",
+                itemName:"Organizers & baskets",
                 src:"https://images-eu.ssl-images-amazon.com/images/G/31/img20/AmazonBrands/GW/2-4_186x116._SY116_CB430773130_.jpg",
             },
             {
@@ -70,7 +70,7 @@ export const ProductCards=[
         items:
         [
             {
-                itemName:"Washing machines & more",
+                itemName:"Washing machines",
                 src:"https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/B00OT9CS5S_186x116._SY116_CB417134289_.jpg",
             },
             {

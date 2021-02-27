@@ -1,0 +1,53 @@
+.checkout {
+  background-color: #eaeded;
+}
+.btn-removeFromCart {
+  background: #f0c14b;
+  width: 40%;
+  height: 100%;
+  margin-left: 18em;
+}
+.checkout-component {
+  max-width: 60em;
+  padding: 5em 2em 54em 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.checkout-cards-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em 1em 1em;
+}
+
+.checkout-itemName {
+  font-weight: 700;
+  color: #007185;
+  font-size: 18px;
+}
+.checkout-price {
+  font-weight: 700;
+  font-size: 18px;
+}
+.shoppingcart-section {
+  justify-content: space-between;
+}
+@media screen and (max-width: 542px) {
+  .btn-removeFromCart {
+    margin-left: 0em;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .price {
+    display: none;
+  }
+  .checkout-cards-details {
+    justify-content: none;
+    flex-flow: column;
+  }
+  .checkout-component {
+    padding-bottom: 0em;
+  }
+}

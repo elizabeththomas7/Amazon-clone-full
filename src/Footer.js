@@ -3,43 +3,37 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <div className="Footer">
-        <a >
-          <div className="Footer__Back-To-Top">
-          </div>
-        </a>
-  
-        <div className="Footer__Vertical-Row">
-          <div className="Footer__Vertical-Col">
-            <div className="Footer__Vertical-Col-Head">Get to Know Us</div>
+        <div className="footer">
+        <div className="footer-row">
+          <div className="footer-col">
+            <div className="footer-col-head">Get to Know Us</div>
             <ul>
               <li>About</li>
-              <li>Career</li>
-              <li>Press</li>
+              <li>Careers</li>
+              <li>Press Releases</li>
               <li>Amazon Cares</li>
               <li>Gift a smile</li>
             </ul>
           </div>
-          <div className="Footer__Vertical-Col">
-            <div className="Footer__Vertical-Col-Head">Connect with us</div>
+          <div className="footer-col">
+            <div className="footer-col-head">Connect with us</div>
             <ul>
               <li>Facebook</li>
               <li>Twitter</li>
               <li>Instagram</li>
             </ul>
           </div>
-          <div className="Footer__Vertical-Col">
-            <div className="Footer__Vertical-Col-Head">Make Money with Us</div>
+          <div className="footer-col">
+            <div className="footer-col-head">Make Money with Us</div>
             <ul>
-              <li>Sell on fake Amazon</li>
-              <li>Sell under fake Amazon</li>
+              <li>Sell on Amazon</li>
+              <li>Sell under Amazon</li>
               <li>Become an Affiliate</li>
               <li>Fulfilment by Amazon</li>
-              <li>Amazon Pay</li>
             </ul>
           </div>
-          <div className="Footer__Vertical-Col">
-            <div className="Footer__Vertical-Col-Head">Connect with us</div>
+          <div className="footer-col">
+            <div className="footer-col-head">Let us help you</div>
             <ul>
               <li>COVID-19 and Amazon</li>
               <li>Your Account</li>
@@ -51,20 +45,14 @@ function Footer() {
             </ul>
           </div>
         </div>
-  
-        <hr />
-  
-        <div className="Footer__Line">
+        <div className="footer-line">
           <img
-            className="Footer__Line-logo"
+            className="footer-line-logo"
             src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
             alt=""
           />
-          <span className="Footer__Line-message">
+          <span className="footer-line-message">
             Amazon clone
-            <a href="http://stjapps.in" target="_blank">
-              STJ
-            </a>
           </span>
         </div>
       </div>

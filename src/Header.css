@@ -27,9 +27,11 @@
 .nav-search-bar {
   display: flex;
   height: 40px;
+  flex-grow: 0.5;
 }
 .nav-search-input {
-  width: 700px;
+  /* width: 700px; */
+  width: 100%;
 }
 .nav-search-btn {
   background-color: #cd9042;
@@ -38,10 +40,42 @@
 .nav-flag {
   width: 3%;
 }
-.header-account-lists {
+.header-account-list {
   color: white;
 }
 
 .header-cart {
   display: flex;
+}
+.header-cart-number {
+  color: white;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+}
+.nav-search-bottom {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header-location {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header-location,
+  .nav-search-bar {
+    display: none;
+  }
+  .nav-flag {
+    display: none;
+  }
+  .nav-search-bottom {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background: #131921;
+    padding: 2px 10px;
+  }
 }

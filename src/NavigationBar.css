@@ -6,3 +6,21 @@
 .navbar {
   padding: 0rem 1rem;
 }
+.navbar-bottom {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-active {
+    display: none;
+  }
+  .navbar-bottom {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar-active {
+    display: none;
+  }
+}

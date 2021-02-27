@@ -10,6 +10,7 @@ import MultiCarousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import {HomepageAds} from './data/HomepageAds.js';
 import {ProductCards} from './data/ProductCards.js';
+import {Link} from 'react-router-dom';
 
 const responsive={
   superLargeDesktop:{
@@ -35,7 +36,7 @@ const [Ads] = useState(HomepageAds);
 const [ItemCards] = useState(ProductCards);
 
 return (
-<div>
+<div className="home">
 <div className="homepage-ads">
             <Carousel 
             showThumbs={false} 
@@ -64,12 +65,14 @@ return (
                     <div className="product-card-icons">
                       {ItemCard.items.map(item=>(
                         <div>
+                          <Link to="/products">
                     <img
                       height="140"
                       width="140"
                       src={item.src}
                     />
-                   <Typography variant="body2" gutterBottom >
+                    </Link>
+                   <Typography  variant="body2" gutterBottom >
                      {item.itemName}
                       </Typography>
                       </div>
